@@ -1,6 +1,9 @@
-import { myFn } from "./index";
+import { Intersection } from "./index";
 
-test("test jest setup", () => {
-  myFn("jest");
-  expect(true).toBe(true);
+test("basic use case", () => {
+  const inte = new Intersection();
+  for (let i = 0; i <= 15; i++) {
+    inte.tick();
+    inte.printState();
+  }
 });
